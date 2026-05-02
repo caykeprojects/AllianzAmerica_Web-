@@ -1,9 +1,23 @@
-*{
+* {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
 
-body{
-    background-color: rgb(204, 36, 250);
+body {
+    background-color: #01102D;
+    color: rgb(146, 146, 146, 0.9)
+}
+
+heather {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    
+}
+
+.logoP {
+    width: 8vw;
+    height: auto;
 }
