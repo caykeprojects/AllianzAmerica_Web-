@@ -1,23 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 * {
+    font-family:'Poppins', sans-serif;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+   }
+
+body{
+    background:linear-gradient(135deg, #541fa9, #2b1414 100%, #7b4ee4);
+    font-size: 100%;
+    background-color: #541fa9;
 }
 
-body {
-    background-color: #01102D;
-    color: rgb(146, 146, 146, 0.9)
-}
+.cabecalho {
+ background:linear-gradient(135deg, #541fa9, #2b1414 100%, #7b4ee4);
+display: flex; 
+gap: 0px;
+padding: 50px;
+height: 3px;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
 
-heather {
-    width: 100%;
+}
+.cabecalho-menu  {
+    text-decoration: none;
+    font-weight: 400;
     display: flex;
+    gap: 80px;
+    font-size: 24px;
+    font-family: 'Poppins', sans-serif;
     justify-content: space-between;
-    padding: 40px;
     
 }
 
-.logoP {
-    width: 8vw;
-    height: auto;
+.cabecalho-menu-item {
+    color: white;
+    font-weight: 400;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.cabecalho-logo{
+    padding: 0;
+    margin:10px;
+    width: 250px;
+    justify-content: space-between;
+}
+
+.cabecalho-barra{
+    padding-left: 100%;
+  border-radius: 20px;
+  padding: 0.8rem;
+  background: transparent;
+  width: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  position: relative;
+
+}
+
+.lupa{
+    position: absolute;
+
+    margin-right: 60%;
+    width: 2rem;
+    opacity: 0.7;
 }
