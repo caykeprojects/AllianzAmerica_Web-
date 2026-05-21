@@ -26,61 +26,140 @@ body{
   text-decoration: none;
   font-weight: 400;
   display: flex;
-  gap: 80px;
+  gap: 50px;
   font-size: 24px;
   font-family: "Poppins", sans-serif;
   justify-content: space-between;
+  align-items: center;
+  
 }
 
 .cabecalho-menu-item {
-  color: white;
+  color: #fff2e7;
+ transition: all 0.5s ease;
+  outline: none;
+  text-decoration: none;
+}
+
+.cabecalho-menu-item:hover {
+  letter-spacing: 3px;
+  color: #fff2e7;
   font-weight: 400;
   text-decoration: none;
   font-family: "Poppins", sans-serif;
 }
 
-.cabecalho-logo {
-  padding: 0;
-  margin: 10px;
-  width: 250px;
-  justify-content: space-between;
+.cabecalho-menu-item:active{
+  letter-spacing: 3px;
+  color: black;
+  transform: translateY(10px);
+  transition: 100ms;
 }
 
-.caixa-pesquisa {
-  width: 800px;
+.cabecalho-logo {
+  display: flex;
+  align-items: baseline;
+  width: 200px;
+  justify-content: space-between;
+  object-fit: cover;
+ 
+
+}
+
+.barra-de-pesquisa {
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  width: 650px;
   height: 60px;
   border-radius: 20px;
   background: transparent;
-  border: 5px solid #ffff;
-  padding-left: 15px;
-  color: azure;
+  border: 5px solid #fff2e7;
+  padding-left: 10px;
+  color: #fff2e7;
   font-family: "Poppins", sans-serif;
   font-size: 1.5rem;
 }
 
-.caixa-pesquisa::placeholder {
+.barra-de-pesquisa::placeholder {
   font-size: 20px;
   font-family: "Courier New", Courier, monospace;
-  color: white;
+  color: #fff2e7;
   opacity: 1%;
 }
 
-.lupa {
-  position: absolute;
-  width: 40px;
-  margin-left: 23%;
+#lupa-pesquisa {
+  background: transparent;
+  border: none;
+  color: #fff2e7;
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  margin: 15px;
+  outline: none;
+}
+
+.cabecalho-botao {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+}
+.cabecalho-botao button {
+
+  padding: 10px 20px;
+  background: transparent;
+  border: 5px solid #fff2e7;
+  border-radius: 20px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  color: #fff2e7;
+  cursor: pointer;
+  font-weight: bold;     
+  transition: all 0.5s ease;
+}
+
+.cabecalho-botao button:hover {
+  background: #fff2e7;
+  color: #c92450;
+  border: 5px solid transparent;
+  transform: scale(1.1);
 }
 
 
-.secao-titulo{
-padding: 15%;
-font-size: 2.5rem;
-color: rgb(243, 96, 38);
+/* Estilos para a seção de conteúdo */
+
+.conteudo{
+  border-top: 0.4px solid #fff2e7;
 
 }
 
-.secao-imagem{
-  margin-left: 50%;
-  max-width: 30%;
-  max-height: auto;
+.conteudo-principal{
+height: 100vh;
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-around;
 }
+
+.conteudo-titulo {
+display: flex;
+flex-direction: column;
+font-family: Georgia, 'Times New Roman', Times, serif;
+font-size: 30px;
+
+
+}
+
+.secao-imagem {
+  display: flex;
+  width: 500px;
+  height: 500px;
+  border-radius: 400px;
+  object-fit: cover;
+  object-position: center;
+  clip-path: circle(50% at 50% 50%);
+  border-radius: 15px;
+  
+}
+
+
