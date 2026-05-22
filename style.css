@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
 * {
   font-family: "Poppins", sans-serif;
   padding: 0;
@@ -7,8 +8,8 @@
 
 }
 
-body{
-   background: linear-gradient(68.15deg, #004ddd 16.62%, #c92450 85.61%);
+body {
+  background: linear-gradient(68.15deg, #004ddd 16.62%, #c92450 85.61%);
   font-size: 100%;
   min-height: 100vh;
 }
@@ -22,6 +23,7 @@ body{
   align-items: center;
   justify-content: space-around;
 }
+
 .cabecalho-menu {
   text-decoration: none;
   font-weight: 400;
@@ -31,12 +33,12 @@ body{
   font-family: "Poppins", sans-serif;
   justify-content: space-between;
   align-items: center;
-  
+
 }
 
 .cabecalho-menu-item {
   color: #fff2e7;
- transition: all 0.5s ease;
+  transition: all 0.5s ease;
   outline: none;
   text-decoration: none;
 }
@@ -49,7 +51,7 @@ body{
   font-family: "Poppins", sans-serif;
 }
 
-.cabecalho-menu-item:active{
+.cabecalho-menu-item:active {
   letter-spacing: 3px;
   color: black;
   transform: translateY(10px);
@@ -62,14 +64,14 @@ body{
   width: 200px;
   justify-content: space-between;
   object-fit: cover;
- 
+
 
 }
 
 .barra-de-pesquisa {
   display: flex;
   flex-direction: row;
-  align-items: center; 
+  align-items: center;
   width: 650px;
   height: 60px;
   border-radius: 20px;
@@ -104,8 +106,8 @@ body{
   align-items: center;
   gap: 50px;
 }
-.cabecalho-botao button {
 
+.cabecalho-botao button {
   padding: 10px 20px;
   background: transparent;
   border: 5px solid #fff2e7;
@@ -114,7 +116,7 @@ body{
   font-family: "Poppins", sans-serif;
   color: #fff2e7;
   cursor: pointer;
-  font-weight: bold;     
+  font-weight: bold;
   transition: all 0.5s ease;
 }
 
@@ -128,27 +130,40 @@ body{
 
 /* Estilos para a seção de conteúdo */
 
-.conteudo{
+.conteudo {
   border-top: 0.4px solid #fff2e7;
 
 }
 
-.conteudo-principal{
-height: 100vh;
-display: flex;
-flex-direction: row;
-align-items: center;
-justify-content: space-around;
+.conteudo-principal {
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: px;
 }
 
 .conteudo-titulo {
-display: flex;
-flex-direction: column;
-font-family: Georgia, 'Times New Roman', Times, serif;
-font-size: 30px;
+  gap: 20px;
+  box-shadow: #fff2e7 0px 0px 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Poppins", sans-serif;
+  font-size: 25px;
+  background: linear-gradient(#f84b4b, #a3abff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  border-radius: 20px;
+}
 
+.conteudo-titulo p {
+  font-size: 20px;
 
 }
+
 
 .secao-imagem {
   display: flex;
@@ -159,7 +174,55 @@ font-size: 30px;
   object-position: center;
   clip-path: circle(50% at 50% 50%);
   border-radius: 15px;
-  
+  position: relative;
+  left: 150px;
 }
 
+.conteudo-btn {
+  position: relative;
+  top: 250px;
+  right: 55%;
+  display: flex;
+  justify-content: space-around;
+  gap: 20%;
+ 
+}
 
+.conteudo-btn button {
+  padding: 20px 10px;
+  width: 200px;
+  font-family:poppins, sans-serif;
+  color: rgb(161, 138, 138);
+  background-color: transparent;
+  font-size: 20px;
+  background: linear-gradient(#af5353, #8f42d6);
+  border: 5px solid #fff2e7;
+  border-radius: 20px;
+  color:#fff2e7;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.conteudo-btn button:hover {
+  background: #fff2e7;
+  color: #c92450;
+  border: 5px solid transparent;
+  transform: scale(1.1);
+}
+
+/* Estilos para a seção de conteúdo secundário */
+.linha-divisao {
+  border-top: 2px solid #fff2e7;
+  width: 80%; 
+  position: relative;
+  bottom: 50%;
+  opacity: 0.5s;
+}
+.conteudo-secundario {
+  
+  height: 90vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  
+}
