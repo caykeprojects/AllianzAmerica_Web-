@@ -136,7 +136,7 @@ body {
 }
 
 .conteudo-principal {
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -185,23 +185,24 @@ body {
   display: flex;
   justify-content: space-around;
   gap: 20%;
- 
+
 }
 
 .conteudo-btn button {
   padding: 20px 10px;
   width: 200px;
-  font-family:poppins, sans-serif;
+  font-family: poppins, sans-serif;
   color: rgb(161, 138, 138);
   background-color: transparent;
   font-size: 20px;
   background: linear-gradient(#af5353, #8f42d6);
   border: 5px solid #fff2e7;
   border-radius: 20px;
-  color:#fff2e7;
+  color: #fff2e7;
   cursor: pointer;
   transition: all 0.5s ease;
 }
+
 .conteudo-btn button:hover {
   background: #fff2e7;
   color: #c92450;
@@ -211,18 +212,75 @@ body {
 
 /* Estilos para a seção de conteúdo secundário */
 .linha-divisao {
-  border-top: 2px solid #fff2e7;
-  width: 80%; 
-  position: relative;
-  bottom: 50%;
-  opacity: 0.5s;
+      border-top: 2px solid #fff2e7;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
+
 .conteudo-secundario {
-  
-  height: 90vh;
-  display: flex;
-  flex-direction: row;
+  height: 100vh;
+}
+
+.linha-divisao h1 {
+  position: relative;
   align-items: center;
   justify-content: center;
-  
+  color:#fff2e7
 }
+
+.estrela1 {
+  position: absolute;
+  left: 20px;
+  font-size: 50px;
+  color: #fff2e7;
+}
+
+.estrela {
+  position: absolute;
+  right: 20px;
+  font-size: 50px;
+  color: #fff2e7;
+}
+
+.cards-certificacao {
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 200px;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 400px;
+    height: 500px;
+    background: transparent;
+    border: 5px solid #fff2e7;
+    border-radius: 20px;
+    color: #fff2e7;
+    text-align: center;
+    font-size: 20px ;
+    transition: all 0.1s ease;
+}
+
+.card:hover{
+    border: 5px solid #fff2e7;
+    transform: scale(1.1);
+}
+
+.icons{
+  bottom: 20px;
+  font-size: 100px;
+  color: #fff2e7;
+}
+
+.
