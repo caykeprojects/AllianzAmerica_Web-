@@ -574,23 +574,24 @@ body {
     position: relative;
     top: 0;
     right: 0;
-    flex-direction: column;
+    flex-direction: row;
     gap: 15px;
   }
 
   .conteudo-btn button {
-    width: 100%;
+    flex: 1;
   }
 
   .cards-certificacao {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     padding: 40px 20px;
+    gap: 20px;
   }
 
   .card {
     width: 100%;
-    height: 350px;
+    height: 300px;
   }
 
   .conteudo-secundario {
@@ -653,78 +654,86 @@ body {
     font-size: 14px;
   }
 
+  /* HEADER MOBILE */
   .cabecalho {
-    display: flex;
-    flex-direction: column;
-    padding: 15px;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto auto;
+    padding: 12px 15px;
+    gap: 12px;
     height: auto;
-    align-items: stretch;
-    justify-content: center;
+    align-items: center;
+    justify-content: start;
   }
 
   .cabecalho-logo {
-    width: 80px;
-    margin: 0 auto;
+    width: 70px;
+    grid-column: 1;
+    grid-row: 1;
   }
 
   .barra-de-pesquisa {
-    width: 100%;
-    height: 40px;
-    font-size: 0.8rem;
-    padding: 5px;
-  }
-
-  #lupa-pesquisa {
-    font-size: 14px;
-    margin: 5px;
+    display: none;
   }
 
   .cabecalho-menu {
-    flex-direction: column;
-    gap: 10px;
-    font-size: 14px;
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 12px;
     width: 100%;
+    grid-column: 1 / -1;
+    grid-row: 2;
+    justify-content: space-between;
+    padding: 0 5px;
   }
 
   .cabecalho-menu-item {
-    padding: 8px;
-    text-align: center;
+    padding: 5px 8px;
+    font-size: 12px;
+    white-space: nowrap;
   }
 
   .cabecalho-botao {
-    flex-direction: column;
-    gap: 10px;
-    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+    width: auto;
+    grid-column: 2;
+    grid-row: 1;
+    justify-content: flex-end;
   }
 
   .cabecalho-botao button {
-    width: 100%;
-    padding: 10px;
-    font-size: 0.85rem;
+    width: auto;
+    padding: 6px 10px;
+    font-size: 11px;
   }
 
   /* Seção Principal */
   .conteudo-principal {
     height: auto;
     flex-direction: column;
-    padding: 20px 15px;
+    padding: 25px 15px;
     gap: 20px;
+    min-height: auto;
   }
 
   .conteudo-titulo {
-    font-size: 16px;
-    padding: 12px;
+    font-size: 14px;
+    padding: 15px 12px;
     gap: 12px;
+    box-shadow: #fff2e7 0px 0px 15px;
   }
 
   .conteudo-titulo h1 {
     font-size: 20px;
+    line-height: 1.3;
   }
 
   .conteudo-titulo p {
     font-size: 12px;
-    line-height: 1.4;
+    line-height: 1.5;
   }
 
   .titulo {
@@ -733,80 +742,86 @@ body {
 
   .secao-imagem {
     width: 100%;
-    max-width: 250px;
-    height: 250px;
+    max-width: 220px;
+    height: 220px;
     left: 0;
+    margin: 0 auto;
+    display: block;
   }
 
   .conteudo-btn {
-    position: relative;
-    top: 0;
-    right: 0;
-    flex-direction: column;
+    position: static;
+    flex-direction: row;
     gap: 10px;
+    justify-content: center;
+    width: 100%;
   }
 
   .conteudo-btn button {
-    width: 100%;
-    padding: 12px 15px;
-    font-size: 14px;
+    flex: 1;
+    max-width: 150px;
+    padding: 10px 12px;
+    font-size: 12px;
   }
 
   /* Seção Secundária */
   .linha-divisao {
     width: 90%;
-    margin: 20px auto;
+    margin: 15px auto;
   }
 
   .linha-divisao h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .estrela {
-    font-size: 25px;
+    font-size: 20px;
     right: 5px;
   }
 
   .estrela1 {
-    font-size: 25px;
+    font-size: 20px;
     left: 5px;
   }
 
   .conteudo-secundario {
     height: auto;
-    padding: 20px 0;
+    padding: 15px 0;
+    min-height: auto;
   }
 
   .cards-certificacao {
     display: grid;
     grid-template-columns: 1fr;
-    padding: 20px 15px;
-    gap: 20px;
+    padding: 15px;
+    gap: 15px;
   }
 
   .card {
     width: 100%;
-    height: 300px;
+    height: 280px;
     padding: 15px;
-    font-size: 14px;
+    font-size: 13px;
+    gap: 12px;
   }
 
   .card h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .card p {
     font-size: 12px;
+    line-height: 1.4;
   }
 
   .icons {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   /* Seção Sobre */
   .sessao-sobre {
     min-height: auto;
-    padding: 30px 15px;
+    padding: 25px 15px;
   }
 
   .sobre-conteudo {
@@ -814,91 +829,103 @@ body {
     flex-direction: column;
     gap: 20px;
     max-width: 100%;
+    align-items: center;
   }
 
   .sobre-texto h1 {
     color: #fff2e7;
-    font-size: 24px;
+    font-size: 22px;
+    text-align: center;
   }
 
   .sobre-texto p {
     font-size: 13px;
     max-width: 100%;
     line-height: 1.6;
+    text-align: justify;
   }
 
   .sobre-imagem {
     width: 100%;
+    max-width: 280px;
     height: auto;
-    max-width: 300px;
   }
 
   /* Seção Cursos */
   .cursos {
     min-height: auto;
-    padding: 30px 15px;
+    padding: 25px 15px;
   }
 
   .cursos h1 {
-    font-size: 24px;
-    margin-bottom: 30px;
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
   }
 
   .cards-cursos {
     display: grid;
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 15px;
     width: 100%;
     max-width: 100%;
   }
 
+  .card-curso {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    overflow: hidden;
+  }
+
   .card-curso img {
-    height: 180px;
+    height: 150px;
   }
 
   .curso-texto {
-    padding: 15px;
-    gap: 10px;
+    padding: 12px;
+    gap: 8px;
   }
 
   .curso-texto h2 {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .curso-texto p {
     font-size: 12px;
+    line-height: 1.4;
   }
 
   /* Footer */
   .footer {
-    margin-top: 50px;
-    padding: 30px 15px;
+    margin-top: 30px;
+    padding: 25px 15px;
   }
 
   .footer-container {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 20px;
   }
 
   .footer-logo h1 {
-    font-size: 24px;
+    font-size: 20px;
   }
 
   .footer-logo p {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .footer-links h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .footer-links a {
-    font-size: 13px;
+    font-size: 12px;
   }
 
   .footer-social h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .social-icons {
@@ -906,39 +933,45 @@ body {
   }
 
   .social-icons a {
-    width: 45px;
-    height: 45px;
-    font-size: 18px;
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
   }
 
   .footer-bottom p {
-    font-size: 12px;
+    font-size: 11px;
   }
 }
 
 /* ============ RESPONSIVIDADE - EXTRA SMALL (até 480px) ============ */
 @media (max-width: 480px) {
   .cabecalho {
+    grid-template-columns: auto 1fr;
     padding: 10px;
+    gap: 8px;
   }
 
   .cabecalho-logo {
-    width: 60px;
-  }
-
-  .barra-de-pesquisa {
-    height: 35px;
-    font-size: 0.7rem;
+    width: 55px;
   }
 
   .cabecalho-menu {
-    font-size: 12px;
+    font-size: 11px;
     gap: 5px;
+    grid-column: 1 / -1;
+  }
+
+  .cabecalho-menu-item {
+    padding: 4px 6px;
   }
 
   .cabecalho-botao button {
-    padding: 8px 10px;
-    font-size: 0.75rem;
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .conteudo-principal {
+    padding: 20px 12px;
   }
 
   .conteudo-titulo h1 {
@@ -955,12 +988,23 @@ body {
   }
 
   .conteudo-btn button {
-    padding: 10px;
-    font-size: 12px;
+    padding: 8px 10px;
+    font-size: 11px;
+    max-width: 120px;
+  }
+
+  .linha-divisao h1 {
+    font-size: 16px;
+  }
+
+  .estrela,
+  .estrela1 {
+    font-size: 18px;
   }
 
   .cards-certificacao {
-    padding: 15px 10px;
+    padding: 12px;
+    gap: 12px;
   }
 
   .card {
@@ -969,15 +1013,19 @@ body {
   }
 
   .card h2 {
-    font-size: 16px;
+    font-size: 15px;
+  }
+
+  .card p {
+    font-size: 11px;
   }
 
   .icons {
-    font-size: 45px;
+    font-size: 40px;
   }
 
   .sobre-texto h1 {
-    font-size: 20px;
+    font-size: 19px;
   }
 
   .sobre-texto p {
@@ -985,16 +1033,25 @@ body {
   }
 
   .sobre-imagem {
-    max-width: 250px;
+    max-width: 200px;
   }
 
   .cursos h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 19px;
+    margin-bottom: 18px;
+  }
+
+  .card-curso img {
+    height: 120px;
+  }
+
+  .curso-texto {
+    padding: 10px;
+    gap: 6px;
   }
 
   .curso-texto h2 {
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .curso-texto p {
@@ -1002,12 +1059,21 @@ body {
   }
 
   .footer-logo h1 {
-    font-size: 20px;
+    font-size: 18px;
+  }
+
+  .footer-logo p {
+    font-size: 11px;
+  }
+
+  .footer-links h2,
+  .footer-social h2 {
+    font-size: 13px;
   }
 
   .social-icons a {
-    width: 40px;
-    height: 40px;
-    font-size: 16px;
+    width: 36px;
+    height: 36px;
+    font-size: 14px;
   }
 }
