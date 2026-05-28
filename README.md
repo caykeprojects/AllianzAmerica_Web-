@@ -1,6 +1,6 @@
 # 🚀 AllianzAmerica
 
-![Banner AllianzAmerica](assets/banner.png)
+Banner AllianzAmerica
 
 ## 🌎 Sobre o Projeto
 
